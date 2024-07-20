@@ -1,16 +1,6 @@
 ### Hi there 👋, I'm [MESHARI](https://github.com/mesharideb) 👨‍💻
 
-<br/>
 
-<a href="https://www.linkedin.com/in/meshari-aldebas-b91b91169">
-  <img align="left" alt="Meshari's Linkedin" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
-</a>
-
-<a href="mailto:meshari@eadebas.net">
-  <img align="left" alt="Meshari's Email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />
-</a>
-
-<br />
 
 <br/>
 
