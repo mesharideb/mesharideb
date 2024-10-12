@@ -8,7 +8,6 @@
 Curious Coder and Full-Stack Developer with a knack for continuous learning and innovation  , Open source enthusiast and active contributor. 
 </p>
 
-<img align="right" alt="GIF" src="https://media.giphy.com/media/MC6eSuC3yypCU/giphy.gif" />
 
 - 👨🏽‍💻 Working at @sharedtech.
 - 💬 Ask me about PHP, Symfony, and Drupal.
