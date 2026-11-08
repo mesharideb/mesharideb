@@ -1,0 +1,65 @@
+name: Refresh contribution skyline
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # 06:17 in Riyadh; GitHub schedules may be delayed.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package*.json'
+      - '*config.ts'
+      - 'tsconfig.json'
+      - 'index.html'
+      - '.github/workflows/skyline.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-skyline
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Fetch actual contribution counts
+        run: npm run fetch:data
+        env:
+          GH_TOKEN: ${{ secrets.SKYLINE_TOKEN || github.token }}
+          SKYLINE_USERNAME: mesharideb
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:browser
+      - run: npm run render:profile
+      - name: Update profile snapshot and images
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/contributions.json assets/contribution-skyline-light.png assets/contribution-skyline-dark.png
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh contribution skyline'
+            git push origin "HEAD:$DEFAULT_BRANCH"
+          fi
+      - name: Save generated images for review
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: profile-skyline
+          path: assets/contribution-skyline-*.png
+          retention-days: 7
