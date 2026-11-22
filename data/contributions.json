@@ -1,16 +1,11 @@
 {
   "schemaVersion": 1,
   "login": "mesharideb",
-  "from": "2025-11-22",
-  "to": "2026-11-21",
-  "fetchedAt": "2026-11-21T11:13:30.453Z",
-  "totalContributions": 1134,
+  "from": "2025-11-23",
+  "to": "2026-11-22",
+  "fetchedAt": "2026-11-22T11:33:11.199Z",
+  "totalContributions": 1347,
   "days": [
-    {
-      "date": "2025-11-22",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-11-23",
       "count": 0,
@@ -1748,28 +1743,28 @@
     },
     {
       "date": "2026-11-05",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2026-11-06",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2026-11-07",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2026-11-08",
-      "count": 12,
+      "count": 15,
       "level": 1
     },
     {
+      "date": "2026-11-06",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-11-07",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-11-08",
+      "count": 35,
+      "level": 2
+    },
+    {
       "date": "2026-11-09",
-      "count": 0,
-      "level": 0
+      "count": 5,
+      "level": 1
     },
     {
       "date": "2026-11-10",
@@ -1788,48 +1783,53 @@
     },
     {
       "date": "2026-11-13",
-      "count": 0,
-      "level": 0
+      "count": 12,
+      "level": 1
     },
     {
       "date": "2026-11-14",
-      "count": 0,
-      "level": 0
+      "count": 23,
+      "level": 2
     },
     {
       "date": "2026-11-15",
-      "count": 0,
-      "level": 0
+      "count": 24,
+      "level": 2
     },
     {
       "date": "2026-11-16",
-      "count": 0,
-      "level": 0
+      "count": 10,
+      "level": 1
     },
     {
       "date": "2026-11-17",
-      "count": 0,
-      "level": 0
+      "count": 5,
+      "level": 1
     },
     {
       "date": "2026-11-18",
-      "count": 0,
-      "level": 0
+      "count": 1,
+      "level": 1
     },
     {
       "date": "2026-11-19",
-      "count": 0,
-      "level": 0
+      "count": 2,
+      "level": 1
     },
     {
       "date": "2026-11-20",
-      "count": 0,
-      "level": 0
+      "count": 15,
+      "level": 1
     },
     {
       "date": "2026-11-21",
-      "count": 0,
-      "level": 0
+      "count": 47,
+      "level": 3
+    },
+    {
+      "date": "2026-11-22",
+      "count": 22,
+      "level": 2
     }
   ]
 }
