@@ -1,16 +1,11 @@
 {
   "schemaVersion": 1,
   "login": "mesharideb",
-  "from": "2025-11-24",
-  "to": "2026-11-23",
-  "fetchedAt": "2026-11-23T12:57:37.501Z",
-  "totalContributions": 1395,
+  "from": "2025-11-25",
+  "to": "2026-11-24",
+  "fetchedAt": "2026-11-24T13:50:55.077Z",
+  "totalContributions": 1414,
   "days": [
-    {
-      "date": "2025-11-24",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-11-25",
       "count": 0,
@@ -1828,8 +1823,13 @@
     },
     {
       "date": "2026-11-23",
-      "count": 2,
+      "count": 21,
       "level": 1
+    },
+    {
+      "date": "2026-11-24",
+      "count": 0,
+      "level": 0
     }
   ]
 }
